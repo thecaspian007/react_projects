@@ -12,7 +12,7 @@ function Snake({ snake }) {
           key={i}
           style={{
             width: "15px",
-            height: "15px",
+            height: "15px", // Keep the height the same as the width to maintain a circle
             backgroundColor: "#3498db", // Change to your desired color
             borderRadius: "50%", // Makes it a circle
             margin: "5px",
@@ -26,4 +26,5 @@ function Snake({ snake }) {
     </div>
   );
 }
+
 export default Snake;

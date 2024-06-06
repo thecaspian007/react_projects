@@ -17,11 +17,11 @@ const randomFoodPosition = () => {
 const initialSnake = {
   snake: [
     { x: 0, y: 0 },
+    { x: 2, y: 0 },
     { x: 4, y: 0 },
-    { x: 8, y: 0 },
   ],
   direction: "ArrowRight",
-  speed: 100,
+  speed: 150,
 };
 
 function App() {
@@ -65,13 +65,13 @@ function App() {
         y -= 4; //move by -4% top
         break;
       case "ArrowRight":
-        x += 4; //move by 4% right
+        x += 2; //move by 4% right
         break;
       case "ArrowDown":
         y += 4; //move by 4% down
         break;
       case "ArrowLeft":
-        x -= 4; //move by -4% left
+        x -= 2; //move by -4% left
         break;
       default:
         break;
