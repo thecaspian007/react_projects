@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import Food from "./components/Food";
 import Snake from "./components/Snake";
+import Celebration from "./components/Celebration";
 
 //method to get random x & y number between 0-96 for random food position
 const randomFoodPosition = () => {
@@ -113,7 +114,12 @@ function App() {
       )}
       {gameOver && (
         <>
+      
+       
           <div className="game-over text">Game Over!</div>
+          <Celebration />{/* Render Celebration component when gameOver is true */}
+         
+          <div style={{ marginBottom: "10rem" }}></div>
           <button
             onClick={() => {
               setIsStarted(true);
